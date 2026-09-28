@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Flip Profile Card 🎴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header Aplikasi -->
+        <header class="app-header">
+            <span class="badge">3D Flip Profile Card</span>
+            <h1>🎴 3D FLIP PROFILE CARD</h1>
+            <p>Klik kartu atau tombol di bawah untuk memutar kartu 180°!</p>
+        </header>
+
+        <!-- Area Kartu 3D Wrapper -->
+        <div class="card-scene">
+            <div id="flip-card" class="card-inner">
+                
+                <!-- SISI DEPAN (FRONT) -->
+                <div class="card-face card-front">
+                    <span class="flip-hint">🔄 KLIK UNTUK FLIP</span>
+                    <div class="avatar-container">
+                        <span class="avatar-emoji">🚀</span>
+                    </div>
+                    <h2 class="profile-name">Alex Rivera</h2>
+                    <p class="profile-tag">Frontend Developer & Designer</p>
+                    <div class="status-badge">🟢 Available for Hire</div>
+                </div>
+
+                <!-- SISI BELAKANG (BACK) -->
+                <div class="card-face card-back">
+                    <span class="flip-hint">🔄 KLIK UNTUK FLIP</span>
+                    <h3>INFO DETAIL 📌</h3>
+                    
+                    <ul class="info-list">
+                        <li><strong>Email:</strong> alex.dev@email.com</li>
+                        <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+                        <li><strong>Keahlian:</strong> HTML, CSS, JS, UI Design</li>
+                    </ul>
+
+                    <div class="social-tags">
+                        <span class="tag pink">GitHub</span>
+                        <span class="tag yellow">Instagram</span>
+                        <span class="tag green">LinkedIn</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tombol Aksi -->
+        <div class="action-section">
+            <button id="btn-flip" class="btn btn-primary">🔄 PUTAR KARTU</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
